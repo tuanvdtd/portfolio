@@ -19,7 +19,7 @@ export function Footer({ language }) {
           
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/tuanvdtd"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors"
@@ -28,7 +28,7 @@ export function Footer({ language }) {
               <Github className="size-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/tu%E1%BA%A5n-%C4%91%E1%BB%97-7a8004387"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors"
@@ -37,7 +37,7 @@ export function Footer({ language }) {
               <Linkedin className="size-5" />
             </a>
             <a
-              href="mailto:alex.morgan@example.com"
+              href="mailto:tuan.do7204@gmail.com"
               className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors"
               aria-label="Email"
             >

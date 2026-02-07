@@ -82,7 +82,7 @@ export function Hero({ language }: HeroProps) {
               <span className="text-sm text-gray-500">{t.connectWith}</span>
               <div className="flex gap-3">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/tuanvdtd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10 transition-all duration-300"
@@ -91,7 +91,7 @@ export function Hero({ language }: HeroProps) {
                   <Github className="size-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/tu%E1%BA%A5n-%C4%91%E1%BB%97-7a8004387"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10 transition-all duration-300"
@@ -100,7 +100,7 @@ export function Hero({ language }: HeroProps) {
                   <Linkedin className="size-5" />
                 </a>
                 <a
-                  href="mailto:alex.morgan@example.com"
+                  href="mailto:tuan.do7204@gmail.comn"
                   className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10 transition-all duration-300"
                   aria-label="Email"
                 >
@@ -179,8 +179,8 @@ export function Hero({ language }: HeroProps) {
                     <div className="text-xs text-gray-500 mt-1">{t.stats.technologiesLabel}</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-teal-400">{t.stats.years}</div>
-                    <div className="text-xs text-gray-500 mt-1">{t.stats.yearsLabel}</div>
+                    <div className="text-2xl font-bold text-teal-400">{t.stats.year}</div>
+                    <div className="text-xs text-gray-500 mt-1">{t.stats.yearLabel}</div>
                   </div>
                 </div>
               </div>

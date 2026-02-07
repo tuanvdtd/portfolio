@@ -35,6 +35,26 @@ export function TechStack({ language }: TechStackProps) {
   const t = translations[language].skills;
   const technologies: Technology[] = [
     {
+      name: "HTML",
+      icon: (
+        <svg className="size-8" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+        </svg>
+      ),
+      color: "text-orange-500",
+      bgColor: "bg-orange-500/10 hover:bg-orange-500/20"
+    },
+    {
+      name: "CSS",
+      icon: (
+        <svg className="size-8" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+        </svg>
+      ),
+      color: "text-blue-600",
+      bgColor: "bg-blue-600/10 hover:bg-blue-600/20"
+    },
+    {
       name: "JavaScript",
       icon: <Code2 className="size-8" />,
       color: "text-yellow-400",
@@ -57,8 +77,8 @@ export function TechStack({ language }: TechStackProps) {
       bgColor: "bg-green-500/10 hover:bg-green-500/20"
     },
     {
-      name: "Python",
-      icon: <Terminal className="size-8" />,
+      name: "Redis",
+      icon: <Database className="size-8" />,
       color: "text-blue-400",
       bgColor: "bg-blue-400/10 hover:bg-blue-400/20"
     },
@@ -78,12 +98,12 @@ export function TechStack({ language }: TechStackProps) {
       color: "text-sky-400",
       bgColor: "bg-sky-400/10 hover:bg-sky-400/20"
     },
-    {
-      name: "AWS",
-      icon: <Cloud className="size-8" />,
-      color: "text-orange-400",
-      bgColor: "bg-orange-400/10 hover:bg-orange-400/20"
-    },
+    // {
+    //   name: "AWS",
+    //   icon: <Cloud className="size-8" />,
+    //   color: "text-orange-400",
+    //   bgColor: "bg-orange-400/10 hover:bg-orange-400/20"
+    // },
     {
       name: "Git",
       icon: <GitBranch className="size-8" />,
@@ -108,12 +128,12 @@ export function TechStack({ language }: TechStackProps) {
       color: "text-blue-300",
       bgColor: "bg-blue-300/10 hover:bg-blue-300/20"
     },
-    {
-      name: "GraphQL",
-      icon: <FileJson className="size-8" />,
-      color: "text-pink-400",
-      bgColor: "bg-pink-400/10 hover:bg-pink-400/20"
-    },
+    // {
+    //   name: "GraphQL",
+    //   icon: <FileJson className="size-8" />,
+    //   color: "text-pink-400",
+    //   bgColor: "bg-pink-400/10 hover:bg-pink-400/20"
+    // },
     {
       name: "Tailwind CSS",
       icon: <Palette className="size-8" />,
@@ -133,25 +153,35 @@ export function TechStack({ language }: TechStackProps) {
       bgColor: "bg-gray-300/10 hover:bg-gray-300/20"
     },
     {
-      name: "Vue.js",
-      icon: <Globe className="size-8" />,
-      color: "text-emerald-400",
-      bgColor: "bg-emerald-400/10 hover:bg-emerald-400/20"
+      name: "NestJS",
+      icon: (
+        <svg className="size-8" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M14.131.047c-.173 0-.334.037-.483.087.348.247.56.655.556 1.073v.004c0 .069-.002.138-.013.207a1.073 1.073 0 0 1-.04.21c-.028.174-.087.347-.173.508l-.01.018c-.028.051-.059.1-.094.146l-.018.026-.035.04c-.054.063-.113.122-.178.175l-.018.015a1.778 1.778 0 0 1-.21.15 1.77 1.77 0 0 1-.24.12c-.088.035-.178.063-.27.082-.098.022-.197.037-.297.044a2.24 2.24 0 0 1-.31 0 2.206 2.206 0 0 1-.306-.039 2.18 2.18 0 0 1-.298-.077 2.146 2.146 0 0 1-.288-.118 2.04 2.04 0 0 1-.273-.156 2.018 2.018 0 0 1-.253-.193c-.077-.07-.149-.144-.214-.223a1.926 1.926 0 0 1-.174-.249 1.911 1.911 0 0 1-.13-.269 1.841 1.841 0 0 1-.08-.288 1.821 1.821 0 0 1-.03-.3v-.007a1.774 1.774 0 0 1 .033-.308c.024-.102.062-.2.11-.293.05-.092.11-.18.18-.26a1.679 1.679 0 0 1 .248-.224c.09-.067.188-.124.291-.17.105-.046.215-.08.327-.104.115-.024.23-.037.346-.04l.011-.001h.015a2.2 2.2 0 0 1 .316.023c.107.016.212.042.316.076.102.034.202.077.298.128.096.051.187.109.273.174.085.064.165.135.239.211.074.077.142.16.204.247.061.088.116.18.163.276.047.096.086.196.117.298.03.102.052.206.065.31.013.106.018.213.014.32zM23.32 8.5l-.05-.12a2.2 2.2 0 0 0-.105-.2 2.19 2.19 0 0 0-.14-.195 2.14 2.14 0 0 0-.174-.187c-.064-.062-.132-.12-.204-.173a2.095 2.095 0 0 0-.233-.15 2.08 2.08 0 0 0-.258-.117 2.05 2.05 0 0 0-.278-.077 2.01 2.01 0 0 0-.297-.038h-.01a2.015 2.015 0 0 0-.3.022c-.101.015-.2.042-.296.077a2.04 2.04 0 0 0-.278.117c-.09.048-.175.103-.255.166l-.005.003a2.04 2.04 0 0 0-.228.19c-.07.067-.135.14-.193.218-.059.078-.111.161-.158.248-.046.087-.085.178-.116.271-.031.093-.055.19-.07.288a2.011 2.011 0 0 0-.015.298v5.516l-.001 1.632v.062c0 .138-.017.274-.05.408a1.638 1.638 0 0 1-.142.377 1.6 1.6 0 0 1-.233.336c-.09.098-.194.184-.307.255a1.558 1.558 0 0 1-.363.167c-.13.042-.266.064-.403.064a1.6 1.6 0 0 1-.41-.054 1.574 1.574 0 0 1-.373-.156 1.542 1.542 0 0 1-.316-.249 1.553 1.553 0 0 1-.233-.325 1.6 1.6 0 0 1-.14-.385 1.638 1.638 0 0 1-.048-.397V8.736a2.01 2.01 0 0 0-.017-.3 2.009 2.009 0 0 0-.07-.29c-.03-.093-.07-.183-.116-.27a2.047 2.047 0 0 0-.158-.247 2.054 2.054 0 0 0-.193-.219 2.067 2.067 0 0 0-.228-.19 2.04 2.04 0 0 0-.255-.166 2.04 2.04 0 0 0-.278-.117 2.014 2.014 0 0 0-.296-.077 2.015 2.015 0 0 0-.3-.022h-.01a2.01 2.01 0 0 0-.297.038c-.098.018-.193.045-.285.08a2.08 2.08 0 0 0-.258.117 2.094 2.094 0 0 0-.233.15c-.072.053-.14.111-.204.173a2.14 2.14 0 0 0-.174.187 2.19 2.19 0 0 0-.14.195c-.04.066-.075.134-.105.203l-.05.118v.001l-.001.002v7.533a4.554 4.554 0 0 0 .09.912c.062.303.16.597.29.877.13.28.29.543.478.784.187.24.403.457.642.644.24.188.504.346.785.472.281.127.577.223.882.286.304.063.616.095.93.095.312 0 .625-.032.93-.095.304-.063.6-.159.881-.286.281-.126.545-.284.786-.472.24-.187.455-.404.642-.644.188-.24.348-.504.478-.784.13-.28.228-.574.29-.877a4.554 4.554 0 0 0 .09-.912l.001-.027V8.5z"/>
+        </svg>
+      ),
+      color: "text-red-500",
+      bgColor: "bg-red-500/10 hover:bg-red-500/20"
     },
+    // {
+    //   name: "Vue.js",
+    //   icon: <Globe className="size-8" />,
+    //   color: "text-emerald-400",
+    //   bgColor: "bg-emerald-400/10 hover:bg-emerald-400/20"
+    // },
+    // {
+    //   name: "Kubernetes",
+    //   icon: <Cpu className="size-8" />,
+    //   color: "text-blue-500",
+    //   bgColor: "bg-blue-500/10 hover:bg-blue-500/20"
+    // },
+    // {
+    //   name: "Django",
+    //   icon: <Shield className="size-8" />,
+    //   color: "text-green-600",
+    //   bgColor: "bg-green-600/10 hover:bg-green-600/20"
+    // },
     {
-      name: "Kubernetes",
-      icon: <Cpu className="size-8" />,
-      color: "text-blue-500",
-      bgColor: "bg-blue-500/10 hover:bg-blue-500/20"
-    },
-    {
-      name: "Django",
-      icon: <Shield className="size-8" />,
-      color: "text-green-600",
-      bgColor: "bg-green-600/10 hover:bg-green-600/20"
-    },
-    {
-      name: "Webpack",
+      name: "React Query",
       icon: <Package className="size-8" />,
       color: "text-sky-300",
       bgColor: "bg-sky-300/10 hover:bg-sky-300/20"

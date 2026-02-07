@@ -35,14 +35,14 @@ export function Contact({ language }: ContactProps) {
     {
       icon: Mail,
       title: t.email,
-      value: "developer@example.com",
-      href: "mailto:developer@example.com",
+      value: "tuan.do7204@gmail.com",
+      href: "mailto:tuan.do7204@gmail.com",
     },
     {
       icon: Phone,
       title: t.phone,
-      value: "+84 123 456 789",
-      href: "tel:+84123456789",
+      value: "+84 37 927 2331",
+      href: "tel:+84379272331",
     },
     {
       icon: MapPin,
