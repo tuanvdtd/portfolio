@@ -176,13 +176,23 @@ export function Projects({ language }: { language: Language }) {
   const projectsData = t.projects.map((p, index) => ({
     ...p,
     image: [
-      "https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9qZWN0JTIwbWFuYWdlbWVudCUyMGthbmJhbiUyMGJvYXJkfGVufDF8fHx8MTc3MDI3MDA2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      "https://images.unsplash.com/photo-1653513186999-6bb39c656f3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJib24lMjBmb290cHJpbnQlMjBlbnZpcm9ubWVudCUyMGdyZWVufGVufDF8fHx8MTc3MDI3MDA2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      "https://images.unsplash.com/photo-1565687981296-535f09db714e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBjb21tdW5pdHklMjBjb2RpbmclMjB0b2dldGhlcnxlbnwxfHx8fDE3NzAyNzAwNjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      "https://images.unsplash.com/photo-1765868017208-c2f1ca867ce0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMGZpbmFuY2UlMjBtb25leSUyMG1hbmFnZW1lbnR8ZW58MXx8fHwxNzcwMjcwMDYxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "/projects/project1.png",
+      "/projects/project2.png",
+      "https://images.unsplash.com/photo-1557821552-17105176677c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzaG9wcGluZyUyMG9ubGluZSUyMHN0b3JlfGVufDB8fHx8MTcwOTkwNDAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHBsYXRmb3JtfGVufDB8fHx8MTcwOTkwNDAwMHww&ixlib=rb-4.1.0&q=80&w=1080"
     ][index],
-    github: "https://github.com/yourusername/" + p.name.toLowerCase().replace(/\s+/g, ''),
-    demo: index === 2 ? null : "https://" + p.name.toLowerCase().replace(/\s+/g, '') + "-demo.com",
+    github: [
+      "https://github.com/tuanvdtd/trello-web-fe",
+      "https://github.com/tuanvdtd/CongNgheWeb20251-QuizzWeb",
+      "https://github.com/tuanvdtd/nodejs-api",
+      "https://github.com/tmtuan04/lms-project2-20242"
+    ][index],
+    demo: [
+      "https://project3-taskflow.vercel.app/",
+      "https://cong-nghe-web20251-quizz-web.vercel.app/teacher/dashboard",
+      null,
+      "https://lms-project2-20242.vercel.app/"
+    ][index],
     color: ["from-purple-500 to-pink-500", "from-green-500 to-emerald-500", "from-blue-500 to-cyan-500", "from-orange-500 to-red-500"][index]
   }));
 

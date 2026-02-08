@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, ArrowRight, Download } from "lucide-react";
 import { translations, Language } from "../utils/translations";
+import { useTypewriter } from "../hooks/useTypewriter";
 
 interface HeroProps {
   language: Language;
@@ -7,6 +8,7 @@ interface HeroProps {
 
 export function Hero({ language }: HeroProps) {
   const t = translations[language].hero;
+  const { displayedText, isDeleting } = useTypewriter(t.name, 150, 100, 2000);
   
   return (
     <section id="home" className="min-h-screen flex items-center px-6 py-20 relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
@@ -43,7 +45,8 @@ export function Hero({ language }: HeroProps) {
                 <span className="text-white" dangerouslySetInnerHTML={{ __html: t.greeting }} />
                 <br />
                 <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
-                  {t.name}
+                  {displayedText}
+                  <span className={`inline-block w-1 h-12 md:h-16 lg:h-20 ml-1 bg-gradient-to-r from-blue-400 to-cyan-400 ${isDeleting ? 'animate-pulse' : 'animate-blink'}`}></span>
                 </span>
               </h1>
               <div className="flex items-center gap-3">
@@ -69,7 +72,9 @@ export function Hero({ language }: HeroProps) {
                 <ArrowRight className="size-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1S-evbeP2hfg9BCxlON5zH8INVZ77aas9/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-white/5 text-white border border-white/10 rounded-lg font-medium hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
               >
                 <Download className="size-5" />
@@ -225,8 +230,21 @@ export function Hero({ language }: HeroProps) {
           }
         }
         
+        @keyframes blink {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+        }
+        
         .animate-float {
           animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-blink {
+          animation: blink 1s ease-in-out infinite;
         }
       `}</style>
     </section>

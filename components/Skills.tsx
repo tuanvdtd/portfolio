@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   Code2, 
   Database, 
@@ -19,6 +21,7 @@ import {
   Package
 } from "lucide-react";
 import { translations, Language } from "../utils/translations";
+import { motion } from "motion/react";
 
 interface Technology {
   name: string;
@@ -197,7 +200,13 @@ export function TechStack({ language }: TechStackProps) {
   return (
     <section id="tech-stack" className="py-24 px-6 bg-gray-900">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {t.title}
           </h2>
@@ -205,13 +214,18 @@ export function TechStack({ language }: TechStackProps) {
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             {t.subtitle}
           </p>
-        </div>
+        </motion.div>
         
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {technologies.map((tech, index) => (
-            <div
+            <motion.div
               key={index}
-              className={`group relative p-6 rounded-2xl border border-gray-800 ${tech.bgColor} transition-all duration-300 hover:scale-105 hover:border-gray-700 cursor-pointer`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.1, y: -5 }}
+              className={`group relative p-6 rounded-2xl border border-gray-800 ${tech.bgColor} transition-all duration-300 hover:border-gray-700 cursor-pointer`}
             >
               <div className="flex flex-col items-center justify-center gap-4">
                 <div className={`${tech.color} transition-transform duration-300 group-hover:scale-110`}>
@@ -224,15 +238,21 @@ export function TechStack({ language }: TechStackProps) {
               
               {/* Glow effect on hover */}
               <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl ${tech.bgColor} -z-10`}></div>
-            </div>
+            </motion.div>
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
           <p className="text-gray-500 italic">
             {t.footer}
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

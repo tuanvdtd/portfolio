@@ -70,7 +70,7 @@ export const translations = {
           name: "TaskFlow",
           tagline: "Project Management App",
           description: "A comprehensive project management tool that helps teams collaborate efficiently. Solved the problem of scattered task management by providing a unified platform with real-time updates, drag-and-drop kanban boards, and team analytics.",
-          technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Tailwind CSS"],
+          technologies: ["React", "JavaScript", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS"],
           features: [
             "Real-time collaboration with WebSocket integration",
             "Drag-and-drop task management with kanban view",
@@ -79,39 +79,39 @@ export const translations = {
           ],
         },
         {
-          name: "EcoTrack",
-          tagline: "Carbon Footprint Calculator",
-          description: "An educational web application that helps users calculate and track their carbon footprint. Addresses climate awareness by providing actionable insights and personalized recommendations to reduce environmental impact.",
-          technologies: ["Next.js", "React", "MongoDB", "Chart.js", "Vercel"],
+          name: "Quizzy",
+          tagline: "Interactive Quiz Platform",
+          description: "A real-time quiz application that enables educators and learners to create, share, and participate in interactive quizzes. Features live competitions with real-time leaderboards and instant feedback to enhance the learning experience.",
+          technologies: ["React", "Vite", "Material UI", "Node.js", "Express.js", "Socket.IO", "MongoDB", "JWT"],
           features: [
-            "Interactive carbon footprint calculation based on lifestyle",
-            "Beautiful data visualizations with historical tracking",
-            "Personalized recommendations for reducing emissions",
-            "Social sharing to encourage community participation"
+            "Real-time quiz competitions with Socket.IO integration",
+            "Dynamic leaderboard and live score tracking",
+            "Secure user authentication with JWT",
+            "Rich quiz creation with multiple question types"
           ],
         },
         {
-          name: "DevConnect",
-          tagline: "Developer Community Platform",
-          description: "A social platform connecting developers worldwide for collaboration, mentorship, and knowledge sharing. Solved the challenge of finding compatible coding partners by implementing skill-based matching algorithms.",
-          technologies: ["Vue.js", "Express.js", "MongoDB", "Redis", "AWS S3"],
+          name: "ShopHub",
+          tagline: "E-Commerce Platform",
+          description: "A modern e-commerce platform featuring product catalog, shopping cart, secure payments, and order management. Built with React and Node.js to deliver a seamless shopping experience with real-time inventory updates.",
+          technologies: ["React", "Node.js", "MongoDB", "Redis", "Stripe API"],
           features: [
-            "Smart matching algorithm based on skills and interests",
-            "Real-time messaging and video chat integration",
-            "Code snippet sharing with syntax highlighting",
-            "Event management for hackathons and meetups"
+            "Real-time inventory management with Redis caching",
+            "Secure payment processing with Stripe integration",
+            "Advanced product search and filtering",
+            "Order tracking and customer dashboard"
           ],
         },
         {
-          name: "FinanceAI",
-          tagline: "Personal Finance Assistant",
-          description: "An intelligent personal finance tracker powered by machine learning. Helps users understand spending patterns and provides AI-driven insights for better financial decisions and budget optimization.",
-          technologies: ["React", "Python", "Django", "TensorFlow", "PostgreSQL", "Docker"],
+          name: "EduPlatform",
+          tagline: "Learning Management System",
+          description: "Modern LMS built with NextJS. Features include course management, student progress tracking, payment via VNPay and real-time analytics for instructors.",
+          technologies: ["NextJs", "TypeScript", "Prisma", "PostgreSQL", "Docker"],
           features: [
-            "Automatic transaction categorization using ML",
-            "Predictive spending analysis and budget forecasts",
-            "Bill reminders and savings goal tracking",
-            "Secure bank account integration with Plaid API"
+            "Comprehensive course management with intuitive interface",
+            "Real-time student progress tracking and monitoring",
+            "Secure and convenient VNPay payment integration",
+            "Detailed analytics and reporting for instructors"
           ],
         },
       ],
@@ -152,7 +152,7 @@ export const translations = {
     hero: {
       badge: "Đang tìm kiếm cơ hội thực tập",
       greeting: "Xin chào, tôi là",
-      name: "Alex Morgan",
+      name: "Đỗ Tất Tuấn",
       role: "Backend/Frontend Developer",
       description: "Lập trình viên đam mê học hỏi và phát triển trong lĩnh vực web development. Hiện đang xây dựng các dự án với công nghệ hiện đại đồng thời mở rộng kỹ năng cả frontend và backend. Mục tiêu: Trở thành full-stack developer thành thạo.",
       viewWork: "Xem công việc của tôi",
@@ -160,7 +160,7 @@ export const translations = {
       connectWith: "Kết nối với tôi:",
       scrollDown: "Cuộn xuống",
       codeComment: {
-        name: "&apos;Alex Morgan&apos;",
+        name: "&apos;Đỗ Tất Tuấn&apos;",
         skills: ["&apos;React&apos;", "&apos;Node&apos;"],
         passion: "&apos;Xây dựng&apos;",
       },
@@ -212,7 +212,7 @@ export const translations = {
           name: "TaskFlow",
           tagline: "Ứng dụng quản lý dự án",
           description: "Công cụ quản lý dự án toàn diện giúp các nhóm cộng tác hiệu quả. Giải quyết vấn đề quản lý tác vụ phân tán bằng cách cung cấp nền tảng thống nhất với cập nhật thời gian thực, bảng kanban kéo và thả và phân tích nhóm.",
-          technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Tailwind CSS"],
+          technologies: ["React", "JavaScript", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS"],
           features: [
             "Cộng tác thời gian thực với tích hợp WebSocket",
             "Quản lý tác vụ kéo và thả với chế độ xem kanban",
@@ -221,39 +221,39 @@ export const translations = {
           ],
         },
         {
-          name: "EcoTrack",
-          tagline: "Máy tính dấu chân carbon",
-          description: "Ứng dụng web giáo dục giúp người dùng tính toán và theo dõi dấu chân carbon của họ. Giải quyết nhận thức về khí hậu bằng cách cung cấp thông tin chi tiết có thể hành động và khuyến nghị cá nhân hóa để giảm tác động môi trường.",
-          technologies: ["Next.js", "React", "MongoDB", "Chart.js", "Vercel"],
+          name: "Quizzy",
+          tagline: "Nền tảng trắc nghiệm tương tác",
+          description: "Ứng dụng trắc nghiệm thời gian thực cho phép giáo viên và học viên tạo, chia sẻ và tham gia các bài trắc nghiệm tương tác. Có tính năng thi đấu trực tiếp với bảng xếp hạng thời gian thực và phản hồi tức thì để nâng cao trải nghiệm học tập.",
+          technologies: ["React", "Vite", "Material UI", "Node.js", "Express.js", "Socket.IO", "MongoDB", "JWT"],
           features: [
-            "Tính toán dấu chân carbon tương tác dựa trên lối sống",
-            "Trực quan hóa dữ liệu đẹp với theo dõi lịch sử",
-            "Khuyến nghị cá nhân hóa để giảm phát thải",
-            "Chia sẻ xã hội để khuyến khích sự tham gia của cộng đồng"
+            "Thi trắc nghiệm thời gian thực với tích hợp Socket.IO",
+            "Bảng xếp hạng động và theo dõi điểm số trực tiếp",
+            "Xác thực người dùng bảo mật với JWT",
+            "Tạo bài trắc nghiệm phong phú với nhiều loại câu hỏi"
           ],
         },
         {
-          name: "DevConnect",
-          tagline: "Nền tảng cộng đồng nhà phát triển",
-          description: "Nền tảng xã hội kết nối các nhà phát triển trên toàn thế giới để cộng tác, cố vấn và chia sẻ kiến thức. Giải quyết thách thức tìm kiếm đối tác lập trình tương thích bằng cách triển khai các thuật toán khớp dựa trên kỹ năng.",
-          technologies: ["Vue.js", "Express.js", "MongoDB", "Redis", "AWS S3"],
+          name: "ShopHub",
+          tagline: "Nền tảng thương mại điện tử",
+          description: "Nền tảng thương mại điện tử hiện đại với catalog sản phẩm, giỏ hàng, thanh toán an toàn và quản lý đơn hàng. Được xây dựng với React và Node.js để mang lại trải nghiệm mua sắm liền mạch với cập nhật tồn kho thời gian thực.",
+          technologies: ["React", "Node.js", "MongoDB", "Redis", "Stripe API"],
           features: [
-            "Thuật toán khớp thông minh dựa trên kỹ năng và sở thích",
-            "Tích hợp nhắn tin thời gian thực và trò chuyện video",
-            "Chia sẻ đoạn mã với đánh dấu cú pháp",
-            "Quản lý sự kiện cho hackathon và cuộc gặp gỡ"
+            "Quản lý tồn kho thời gian thực với bộ nhớ đệm Redis",
+            "Xử lý thanh toán an toàn với tích hợp Stripe",
+            "Tìm kiếm và lọc sản phẩm nâng cao",
+            "Theo dõi đơn hàng và bảng điều khiển khách hàng"
           ],
         },
         {
-          name: "FinanceAI",
-          tagline: "Trợ lý tài chính cá nhân",
-          description: "Trình theo dõi tài chính cá nhân thông minh được hỗ trợ bởi học máy. Giúp người dùng hiểu các mô hình chi tiêu và cung cấp thông tin chi tiết dựa trên AI để ra quyết định tài chính tốt hơn và tối ưu hóa ngân sách.",
-          technologies: ["React", "Python", "Django", "TensorFlow", "PostgreSQL", "Docker"],
+          name: "EduPlatform",
+          tagline: "Hệ thống quản lý học tập",
+          description: "Hệ thống LMS hiện đại được xây dựng với NextJS. Các tính năng bao gồm quản lý khóa học, theo dõi tiến độ học sinh, thanh toán qua VNPay và phân tích thời gian thực cho giảng viên.",
+          technologies: ["NextJs", "TypeScript", "Prisma", "PostgreSQL", "Docker"],
           features: [
-            "Phân loại giao dịch tự động sử dụng ML",
-            "Phân tích chi tiêu dự đoán và dự báo ngân sách",
-            "Nhắc nhở hóa đơn và theo dõi mục tiêu tiết kiệm",
-            "Tích hợp tài khoản ngân hàng an toàn với API Plaid"
+            "Quản lý khóa học toàn diện với giao diện trực quan",
+            "Theo dõi tiến độ học tập của học sinh theo thời gian thực",
+            "Tích hợp thanh toán VNPay an toàn và tiện lợi",
+            "Phân tích và báo cáo chi tiết cho giảng viên"
           ],
         },
       ],
